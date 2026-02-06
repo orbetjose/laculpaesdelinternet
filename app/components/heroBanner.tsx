@@ -51,7 +51,7 @@ export default function heroBanner() {
         height={20}
       />
       <Image
-        src={`${currentDomain}wp-content/uploads/2026/02/content-hero.webp`}
+        src={`${currentDomain}wp-content/uploads/2026/02/content-hero.png`}
         alt="Imagen Oscar, Daniela y Nacho"
         className="translate-middle h-100 3xl:h-130 w-auto"
         width={100}
