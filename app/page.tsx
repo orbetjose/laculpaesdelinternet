@@ -42,14 +42,14 @@ export default function Home() {
       <HeroBanner />
       <div className="relative md:h-[75vh] 3xl:h-[65vh]">
         <Image
-          src={`${currentDomain}wp-content/uploads/2026/02/fondo-podcast.webp`}
+          src={`${currentDomain}wp-content/uploads/2026/02/fondo-podcast.png`}
           alt="Fondo podcast"
           width={600}
           height={400}
           className="w-full md:h-[75vh] 3xl:h-[65vh] object-cover absolute top-0 left-0"
         />
         <Image
-          src={`${currentDomain}wp-content/uploads/2026/02/imagen-podcast.webp`}
+          src={`${currentDomain}wp-content/uploads/2026/02/imagen-podcast.png`}
           alt="Imagen podcast la culpa es del internet"
           width={300}
           height={20}
@@ -130,7 +130,7 @@ export default function Home() {
       </div>
       <div className="relative md:h-120">
         <Image
-          src={`${currentDomain}wp-content/uploads/2026/02/fondo-contact.webp`}
+          src={`${currentDomain}wp-content/uploads/2026/02/fondo-contacto.png`}
           alt="Fondo contacto"
           width={1920}
           height={700}
@@ -158,7 +158,7 @@ export default function Home() {
           className="md:h-130"
         />
         <Image
-          src={`${currentDomain}wp-content/uploads/2026/02/footer-imagen.webp`}
+          src={`${currentDomain}wp-content/uploads/2026/02/footer-imagen.png`}
           alt="Imagen footer la culpa es del internet"
           width={400}
           height={200}

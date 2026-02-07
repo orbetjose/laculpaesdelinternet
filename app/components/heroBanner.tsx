@@ -44,7 +44,7 @@ export default function heroBanner() {
         </a>
       </div>
       <Image
-        src={`${currentDomain}wp-content/uploads/2026/02/fondo-hero.webp`}
+        src={`${currentDomain}wp-content/uploads/2026/02/fondo-hero.png`}
         alt="Fondo hero ladrillos"
         className="w-full h-full"
         width={100}
