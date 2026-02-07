@@ -66,7 +66,7 @@ export default function Home() {
             </p>
             <p className="3xl:text-lg">Porque si algo salió mal… la culpa es del internet.</p>
           </div>
-          <div className="flex justify-center gap-8 pt-4">
+          <div className="flex justify-center md:justify-start gap-8 pt-4">
             <a href="">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/fb-icon.png`}
@@ -124,7 +124,7 @@ export default function Home() {
             alt="Video la culpa es del internet"
             width={1920}
             height={662}
-            className="w-full h-80 md:max-h-100 3xl:max-h-120 object-cover"
+            className="w-full h-80 md:max-h-100 3xl:max-h-150 object-cover"
           />
         </div>
       </div>
@@ -136,7 +136,7 @@ export default function Home() {
           height={1023}
           className="absolute w-full h-100 md:h-120 object-cover"
         />
-        <div className="flex flex-col absolute bottom-0 md:left-10 left-1/2 -translate-x-1/2 gap-4">
+        <div className="flex flex-col absolute bottom-0 md:left-10 left-1/2 -translate-x-1/2 md:translate-x-0 gap-4">
           <h3 className="font-dirtylizard text-5xl text-white text-center">Contácto</h3>
           <Image
             src={`${currentDomain}wp-content/uploads/2026/02/imagen-formulario.webp`}
