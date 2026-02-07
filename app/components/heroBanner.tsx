@@ -47,22 +47,22 @@ export default function heroBanner() {
         src={`${currentDomain}wp-content/uploads/2026/02/fondo-hero.png`}
         alt="Fondo hero ladrillos"
         className="w-full h-full"
-        width={100}
-        height={20}
+        width={1920}
+        height={911}
       />
       <Image
         src={`${currentDomain}wp-content/uploads/2026/02/content-hero.png`}
         alt="Imagen Oscar, Daniela y Nacho"
         className="translate-middle h-100 3xl:h-130 w-auto"
-        width={100}
-        height={20}
+        width={716}
+        height={520}
       />
       <Image
         src={`${currentDomain}wp-content/uploads/2026/02/separator.png`}
         alt="Separador hero"
         className="separator-hero h-8 w-full "
-        width={100}
-        height={20}
+        width={1920}
+        height={40}
       />
       <Image
         src={`${currentDomain}wp-content/uploads/2026/02/purple-dot.png`}
