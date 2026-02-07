@@ -40,22 +40,22 @@ export default function Home() {
   return (
     <main className="">
       <HeroBanner />
-      <div className="relative md:h-[75vh] 3xl:h-[65vh]">
+      <div className="relative h-[75vh] 3xl:h-[65vh]">
         <Image
           src={`${currentDomain}wp-content/uploads/2026/02/fondo-podcast.png`}
           alt="Fondo podcast"
-          width={600}
-          height={400}
-          className="w-full md:h-[75vh] 3xl:h-[65vh] object-cover absolute top-0 left-0"
+          width={1920}
+          height={608}
+          className="w-full h-[75vh] 3xl:h-[65vh] object-cover absolute top-0 left-0"
         />
         <Image
           src={`${currentDomain}wp-content/uploads/2026/02/imagen-podcast.png`}
           alt="Imagen podcast la culpa es del internet"
-          width={300}
-          height={20}
-          className="absolute bottom-0 left-30 z-1 md:h-90 3xl:h-120 w-auto"
+          width={1034}
+          height={710}
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-30 z-1 h-35 md:h-90 3xl:h-120 w-auto"
         />
-        <div className="flex flex-col ml-auto md:max-w-xl 3xl:max-w-3xl 3xl:mr-20 text-white font-poppins relative md:h-[75vh] 3xl:h-[65vh] justify-center">
+        <div className="flex flex-col ml-auto md:max-w-xl 3xl:max-w-3xl 3xl:mr-20 text-white font-poppins relative md:h-[75vh] 3xl:h-[65vh] justify-center px-8 md:px-0 py-4 md:py-0">
           <div className="md:pr-20 space-y-4">
             <p className="font-poppins-italic text-lg 3xl:text-xl">
               Tres voces, cero filtro y demasiadas historias que solo podían pasar… en internet.
@@ -66,48 +66,48 @@ export default function Home() {
             </p>
             <p className="3xl:text-lg">Porque si algo salió mal… la culpa es del internet.</p>
           </div>
-          <div className="flex gap-8 pt-4">
+          <div className="flex justify-center gap-8 pt-4">
             <a href="">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/fb-icon.png`}
                 alt="Facebook podcast"
-                width={20}
-                height={20}
-                className="h-14 w-auto"
+                width={65}
+                height={107}
+                className="h-10 md:h-14 w-auto"
               />
             </a>
             <a href="">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/yt-icon.png`}
                 alt="Youtube podcast"
-                width={20}
-                height={20}
-                className="h-14 w-auto"
+                width={137}
+                height={106}
+                className="h-10 md:h-14 w-auto"
               />
             </a>
             <a href="">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/ig-icon.png`}
                 alt="Instagram podcast"
-                width={20}
-                height={20}
-                className="h-14 w-auto"
+                width={97}
+                height={97}
+                className="h-10 md:h-14 w-auto"
               />
             </a>
             <a href="">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/tiktok-icon.png`}
                 alt="Tiktok podcast"
-                width={20}
-                height={20}
-                className="h-14 w-auto"
+                width={94}
+                height={94}
+                className="h-10 md:h-14 w-auto"
               />
             </a>
           </div>
         </div>
       </div>
       <div
-        className="bg-cover bg-center py-14 space-y-10"
+        className="bg-cover bg-center py-14 space-y-10 px-4 md:px-0"
         style={{
           backgroundImage: "url('https://admin.laculpaesdelinternet.com/wp-content/uploads/2026/02/fondo-team-scaled.png')",
         }}>
@@ -124,26 +124,26 @@ export default function Home() {
             alt="Video la culpa es del internet"
             width={1920}
             height={662}
-            className="w-full md:max-h-100 3xl:max-h-120 object-cover"
+            className="w-full h-80 md:max-h-100 3xl:max-h-120 object-cover"
           />
         </div>
       </div>
-      <div className="relative md:h-120">
+      <div className="relative h-100 md:h-120">
         <Image
           src={`${currentDomain}wp-content/uploads/2026/02/fondo-contacto.png`}
           alt="Fondo contacto"
           width={1920}
-          height={700}
-          className="absolute w-full md:h-120 object-cover"
+          height={1023}
+          className="absolute w-full h-100 md:h-120 object-cover"
         />
-        <div className="flex flex-col absolute bottom-0 left-10 gap-4">
+        <div className="flex flex-col absolute bottom-0 md:left-10 left-1/2 -translate-x-1/2 gap-4">
           <h3 className="font-dirtylizard text-5xl text-white text-center">Contácto</h3>
           <Image
             src={`${currentDomain}wp-content/uploads/2026/02/imagen-formulario.webp`}
             alt="Imagen formulario contacto la culpa es del internet"
-            width={600}
-            height={400}
-            className=" md:h-80 w-auto"
+            width={984}
+            height={660}
+            className="h-40 md:h-80 w-auto "
           />
         </div>
 
@@ -154,15 +154,15 @@ export default function Home() {
           src={`${currentDomain}wp-content/uploads/2026/02/fondo-footer.png`}
           alt="Fondo footer"
           width={1920}
-          height={700}
-          className="md:h-130"
+          height={755}
+          className="h-100 md:h-130"
         />
         <Image
           src={`${currentDomain}wp-content/uploads/2026/02/footer-imagen.png`}
           alt="Imagen footer la culpa es del internet"
-          width={400}
-          height={200}
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:h-100 w-auto"
+          width={1244}
+          height={552}
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-70 object-cover md:h-100 w-auto"
         />
       </div>
     </main>
