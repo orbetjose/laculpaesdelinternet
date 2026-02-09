@@ -14,6 +14,8 @@
   --font-poppins: var(--font-poppins);
   --font-poppins-italic: var(--font-poppins-italic);
   --font-dirtylizard: var(--font-dirty-lizard);
+  --color-contact: #5468a7;
+  --color-input: #ced5eb;
 }
 
 body {

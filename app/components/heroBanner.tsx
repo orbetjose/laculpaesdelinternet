@@ -6,7 +6,7 @@ export default function heroBanner() {
   return (
     <div className="h-screen relative overflow-hidden">
       <div className="w-full justify-center absolute flex md:gap-8 left-1/2 -translate-x-1/2 md:top-16 top-28 3xl:top-32 px-8 md:px-0">
-        <a href="#">
+        <a href="https://www.facebook.com/profile.php?id=61580423006255" target="_blank">
           <Image
             src={`${currentDomain}wp-content/uploads/2026/02/fb-icon.png`}
             alt="Facebook icono banner"
@@ -15,7 +15,7 @@ export default function heroBanner() {
             height={107}
           />
         </a>
-        <a href="#">
+        <a href="https://www.youtube.com/@LaCulpaesdelInternet" target="_blank">
           <Image
             src={`${currentDomain}wp-content/uploads/2026/02/yt-icon.png`}
             alt="YouTube icono banner"
@@ -24,7 +24,7 @@ export default function heroBanner() {
             height={106}
           />
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/laculpaesdelinternet/" target="_blank">
           <Image
             src={`${currentDomain}wp-content/uploads/2026/02/ig-icon.png`}
             alt="Instagram icono banner"
@@ -33,7 +33,7 @@ export default function heroBanner() {
             height={97}
           />
         </a>
-        <a href="#">
+        <a href="https://www.tiktok.com/@laculpaesdelinternet" target="_blank">
           <Image
             src={`${currentDomain}wp-content/uploads/2026/02/tiktok-icon.png`}
             alt="TikTok icono banner"

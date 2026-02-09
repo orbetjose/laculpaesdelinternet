@@ -67,7 +67,7 @@ export default function Home() {
             <p className="3xl:text-lg">Porque si algo salió mal… la culpa es del internet.</p>
           </div>
           <div className="flex justify-center md:justify-start gap-8 pt-4">
-            <a href="">
+            <a href="https://www.facebook.com/profile.php?id=61580423006255" target="_blank">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/fb-icon.png`}
                 alt="Facebook podcast"
@@ -76,7 +76,7 @@ export default function Home() {
                 className="h-10 md:h-14 w-auto"
               />
             </a>
-            <a href="">
+            <a href="https://www.youtube.com/@LaCulpaesdelInternet" target="_blank">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/yt-icon.png`}
                 alt="Youtube podcast"
@@ -85,7 +85,7 @@ export default function Home() {
                 className="h-10 md:h-14 w-auto"
               />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/laculpaesdelinternet/" target="_blank">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/ig-icon.png`}
                 alt="Instagram podcast"
@@ -94,7 +94,7 @@ export default function Home() {
                 className="h-10 md:h-14 w-auto"
               />
             </a>
-            <a href="">
+            <a href="https://www.tiktok.com/@laculpaesdelinternet" target="_blank">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/tiktok-icon.png`}
                 alt="Tiktok podcast"
@@ -128,13 +128,13 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="relative h-100 md:h-120">
+      <div className="relative h-100 md:h-140 flex items-center">
         <Image
           src={`${currentDomain}wp-content/uploads/2026/02/fondo-contacto.png`}
           alt="Fondo contacto"
           width={1920}
           height={1023}
-          className="absolute w-full h-100 md:h-120 object-cover"
+          className="absolute w-full h-100 md:h-140 object-cover"
         />
         <div className="flex flex-col absolute bottom-0 md:left-10 left-1/2 -translate-x-1/2 md:translate-x-0 gap-4">
           <h3 className="font-dirtylizard text-5xl text-white text-center">Contácto</h3>
@@ -146,7 +146,6 @@ export default function Home() {
             className="h-40 md:h-80 w-auto "
           />
         </div>
-
         <ContactForm />
       </div>
       <div className="relative ">
