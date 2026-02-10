@@ -2,6 +2,7 @@ import Image from "next/image";
 
 type infoTeamProps = {
   infoTeams: {
+    id:string;
     name: string;
     subtitle: string;
     description: string[];
@@ -15,7 +16,7 @@ export default function infoTeam({ infoTeams, orientation }: infoTeamProps) {
   const currentDomain = process.env.WP_DOMAIN;
   return (
     <div
-      className={`max-w-4xl mx-auto flex justify-between relative  items-center flex-wrap ${orientation ? "flex-row" : "flex-row-reverse"}`}>
+      className={`max-w-4xl mx-auto flex justify-between relative  items-center flex-wrap ${orientation ? "flex-row" : "flex-row-reverse"}`} id={`team-${infoTeams.id}`}>
       <div className="md:w-1/2 text-white font-poppins ">
         <h3
           className={`text-center text-4xl font-dirtylizard md:text-6xl pb-12 uppercase md:max-w-sm ${orientation ? "md:text-left" : "md:text-right"}`}>

@@ -52,7 +52,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="md:max-w-lg pt-6 relative md:ml-auto md:mr-12 font-poppins bg-contact p-8 rounded-3xl">
+    <div className="md:max-w-lg pt-6 relative md:ml-auto md:mr-12 font-poppins bg-contact p-8 rounded-3xl 3xl:mr-85">
       <form
         onSubmit={handleSubmit}
         className="space-y-2 text-white">

@@ -1,11 +1,17 @@
+"use client";
+
+import { useState } from "react";
 import ContactForm from "./components/contactForm";
 import HeroBanner from "./components/heroBanner";
 import InfoTeam from "./components/infoTeam";
 import Image from "next/image";
 
 export default function Home() {
+  const [activeMenu, setActiveMenu] = useState(false);
+
   const infoTeams = [
     {
+      id: "oscar",
       name: "Oscar el teacher",
       subtitle: "Humor inteligente, sarcasmo fino y verdades incómodas.",
       description: [
@@ -15,6 +21,7 @@ export default function Home() {
       image: "wp-content/uploads/2026/02/oscar-image.webp",
     },
     {
+      id:"daniela",
       name: "Daniela rosas",
       subtitle: "Frescura, ironía y el lado real de las redes.",
 
@@ -25,6 +32,7 @@ export default function Home() {
       image: "wp-content/uploads/2026/02/daniela-image.webp",
     },
     {
+      id:"nacho",
       name: "Nacho el biónico",
       subtitle: "Humor sin filtros y verdades incómodas.",
       description: [
@@ -37,9 +45,88 @@ export default function Home() {
   ];
   const currentDomain = process.env.WP_DOMAIN;
 
+    const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+      setActiveMenu(false); 
+    }
+  };
+
   return (
     <main className="">
-      <HeroBanner />
+      <div className="overflow-hidden relative">
+        <HeroBanner />
+        <Image
+          src={`${currentDomain}wp-content/uploads/2026/02/hamburger-menu.webp`}
+          alt="Logo header"
+          width={40}
+          height={40}
+          className={`absolute md:top-10 md:right-20 top-5 right-5 ${activeMenu ? "opacity-0" : "opacity-100"} transition-opacity duration-400 cursor-pointer`}
+          onClick={() => setActiveMenu(!activeMenu)}
+        />
+        <div
+          className={`bg-black absolute w-full h-[70vh] md:h-[85vh] top-0 right-0 md:w-70 pt-12 pl-12 menu transition-transform duration-400 z-10 ${activeMenu ? "translate-x-0" : "translate-x-400"}`}>
+          <Image
+            src={`${currentDomain}wp-content/uploads/2026/02/content-hero.png`}
+            alt="Logo header"
+            width={150}
+            height={150}
+            className=""
+          />
+          <Image
+            src="https://admin.imarayulloa.com/wp-content/uploads/2026/01/cross-ico.png"
+            alt="Close icono"
+            width={20}
+            height={20}
+            className="absolute top-5 right-5 cursor-pointer invert"
+            onClick={() => setActiveMenu(false)}
+          />
+          <div className="pt-12">
+            <ul className="text-white font-sans font-bold uppercase text-lg space-y-6">
+              <li>
+                <a
+                  className="cursor-pointer" onClick={()=> scrollToSection("quienes-somos")}>
+                  quienes somos
+                </a>
+              </li>
+              <li>
+                <a
+                  className="cursor-pointer" onClick={()=> scrollToSection("team-oscar")}>
+                  oscar el teacher
+                </a>
+              </li>
+              <li>
+                <a
+                  className="cursor-pointer" onClick={()=> scrollToSection("team-daniela")}>
+                  daniela rosas
+                </a>
+              </li>
+              <li>
+                <a
+                  className="cursor-pointer" onClick={()=> scrollToSection("team-nacho")}>
+                  nacho el biónico
+                </a>
+              </li>
+
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.youtube.com/@ImarayUlloa1">
+                  canal de Youtube
+                </a>
+              </li>
+              <li className="text-purple">
+                <a className="cursor-pointer" onClick={()=> scrollToSection("contacto")}>Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div className="relative h-[75vh] 3xl:h-[65vh]">
         <Image
           src={`${currentDomain}wp-content/uploads/2026/02/fondo-podcast.png`}
@@ -55,7 +142,7 @@ export default function Home() {
           height={710}
           className="absolute bottom-0 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-30 z-1 h-35 md:h-90 3xl:h-120 w-auto"
         />
-        <div className="flex flex-col ml-auto md:max-w-xl 3xl:max-w-3xl 3xl:mr-20 text-white font-poppins relative md:h-[75vh] 3xl:h-[65vh] justify-center px-8 md:px-0 py-4 md:py-0">
+        <div className="flex flex-col ml-auto md:max-w-xl 3xl:max-w-3xl 3xl:mr-20 text-white font-poppins relative md:h-[75vh] 3xl:h-[65vh] justify-center px-8 md:px-0 py-4 md:py-0" id="quienes-somos">
           <div className="md:pr-20 space-y-4">
             <p className="font-poppins-italic text-lg 3xl:text-xl">
               Tres voces, cero filtro y demasiadas historias que solo podían pasar… en internet.
@@ -67,7 +154,9 @@ export default function Home() {
             <p className="3xl:text-lg">Porque si algo salió mal… la culpa es del internet.</p>
           </div>
           <div className="flex justify-center md:justify-start gap-8 pt-4">
-            <a href="https://www.facebook.com/profile.php?id=61580423006255" target="_blank">
+            <a
+              href="https://www.facebook.com/profile.php?id=61580423006255"
+              target="_blank">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/fb-icon.png`}
                 alt="Facebook podcast"
@@ -76,7 +165,9 @@ export default function Home() {
                 className="h-10 md:h-14 w-auto"
               />
             </a>
-            <a href="https://www.youtube.com/@LaCulpaesdelInternet" target="_blank">
+            <a
+              href="https://www.youtube.com/@LaCulpaesdelInternet"
+              target="_blank">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/yt-icon.png`}
                 alt="Youtube podcast"
@@ -85,7 +176,9 @@ export default function Home() {
                 className="h-10 md:h-14 w-auto"
               />
             </a>
-            <a href="https://www.instagram.com/laculpaesdelinternet/" target="_blank">
+            <a
+              href="https://www.instagram.com/laculpaesdelinternet/"
+              target="_blank">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/ig-icon.png`}
                 alt="Instagram podcast"
@@ -94,7 +187,9 @@ export default function Home() {
                 className="h-10 md:h-14 w-auto"
               />
             </a>
-            <a href="https://www.tiktok.com/@laculpaesdelinternet" target="_blank">
+            <a
+              href="https://www.tiktok.com/@laculpaesdelinternet"
+              target="_blank">
               <Image
                 src={`${currentDomain}wp-content/uploads/2026/02/tiktok-icon.png`}
                 alt="Tiktok podcast"
@@ -109,7 +204,8 @@ export default function Home() {
       <div
         className="bg-cover bg-center py-14 space-y-10 px-4 md:px-0"
         style={{
-          backgroundImage: "url('https://admin.laculpaesdelinternet.com/wp-content/uploads/2026/02/fondo-team-scaled.png')",
+          backgroundImage:
+            "url('https://admin.laculpaesdelinternet.com/wp-content/uploads/2026/02/fondo-team-scaled.png')",
         }}>
         {infoTeams.map((team, index) => (
           <InfoTeam
@@ -128,7 +224,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="relative h-100 md:h-140 flex items-center">
+      <div className="relative h-100 md:h-140 flex items-center" id="contacto">
         <Image
           src={`${currentDomain}wp-content/uploads/2026/02/fondo-contacto.png`}
           alt="Fondo contacto"
@@ -136,8 +232,8 @@ export default function Home() {
           height={1023}
           className="absolute w-full h-100 md:h-140 object-cover"
         />
-        <div className="flex flex-col absolute bottom-0 md:left-10 left-1/2 -translate-x-1/2 md:translate-x-0 gap-4">
-          <h3 className="font-dirtylizard text-5xl text-white text-center">Contácto</h3>
+        <div className="flex flex-col absolute bottom-0 md:left-10 left-1/2 -translate-x-1/2 md:translate-x-0 gap-4 3xl:left-60">
+          <h3 className="font-dirtylizard text-5xl text-white text-center">Contacto</h3>
           <Image
             src={`${currentDomain}wp-content/uploads/2026/02/imagen-formulario.webp`}
             alt="Imagen formulario contacto la culpa es del internet"
