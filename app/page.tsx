@@ -78,7 +78,7 @@ export default function Home() {
             className=""
           />
           <Image
-            src="https://admin.imarayulloa.com/wp-content/uploads/2026/01/cross-ico.png"
+            src="https://admin.imarayulloa.com/wp-content/uploads/2026/03/cross-ico.png"
             alt="Close icono"
             width={20}
             height={20}
