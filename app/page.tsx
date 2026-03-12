@@ -61,7 +61,7 @@ export default function Home() {
       <div className="overflow-hidden relative">
         <HeroBanner />
         <Image
-          src={`${currentDomain}wp-content/uploads/2026/02/hamburger-menu.webp`}
+          src={`${currentDomain}wp-content/uploads/2026/03/hamburger-menu.webp`}
           alt="Logo header"
           width={40}
           height={40}
