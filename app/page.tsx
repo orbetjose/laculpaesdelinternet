@@ -82,7 +82,7 @@ export default function Home() {
             alt="Close icono"
             width={20}
             height={20}
-            className="absolute top-5 right-5 cursor-pointer invert"
+            className="absolute top-5 right-5 cursor-pointer invert invert2"
             onClick={() => setActiveMenu(false)}
           />
           <div className="pt-12">
