@@ -78,11 +78,11 @@ export default function Home() {
             className=""
           />
           <Image
-            src="https://admin.imarayulloa.com/wp-content/uploads/2026/03/cross-ico.png"
+            src="https://admin.laculpaesdelinternet.com/wp-content/uploads/2026/03/cross-ico.png"
             alt="Close icono"
             width={20}
             height={20}
-            className="absolute top-5 right-5 cursor-pointer invert invert2"
+            className="absolute top-5 right-5 cursor-pointer invert"
             onClick={() => setActiveMenu(false)}
           />
           <div className="pt-12">
